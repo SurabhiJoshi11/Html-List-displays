@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<script>
+ 
+    var a = prompt("FIRST COUNTRY");
+    var b = prompt("SECOND COUNTRY");
+    var c = prompt("THIRD COUNTRY");
+    var d = prompt("FOURTH COUNTRY");
+    var e = prompt("FIFTH COUNTRY");
+    var f = prompt("SIXTH COUNTRY");
+ 
+function askMe()
+{
+    
+    
+    
+  if (f != null)
+  {
+//document.getElementById("output").innerHTML = "COUNTRIES ENTERED ARE:" + "<ul><li>a</li><li>b</li><li>c</li><li>d</li><li>e</li><li>f</li></ul>";
+
+document.getElementById("output").innerHTML = "COUNTRIES ENTERED ARE:" + "<ul>" + "<li>" + a + "</li>" + "<li>" + b + "</li>" + "<li>" + c + "</li>" + "<li>" + d + "</li>" + "<li>" + e + "</li>" + "<li>" + f + "</li>" + "</ul>";
+
+  }
+
+  
+}
+
+
+
+function myFunction()
+{
+   alert("Countries : \n" + a + ", "+ b + ", " + c + ", " + d + " ," + e + ", " + f);
+    
+}
+
+</script>
+<body onload="askMe()">
+    <ul id="output">
+    </ul>
+<br/>
+<br/>
+<button id="myBtn" value="display" onclick="myFunction()"><b>DISPLAY</b></button>
+
+</body>
+</html>
